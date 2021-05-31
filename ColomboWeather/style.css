@@ -1,0 +1,170 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bg {
+    /* The image used */
+    background-image: url("image/login_bg.jpg");
+    /* Full height */
+    /* height: 100%;  */
+    /* Center and scale the image nicely */
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+  }
+
+.navbar-custom {
+    background-color: rgba(21, 40, 58, 0.8) ;
+}
+
+.row-1 {
+  background-color: rgba(21, 40, 58, 0.8) ;
+  /* margin-left: 10px;  */
+     margin-top: 10px;
+     width: 101%; 
+  /* margin-right: 10px; */
+  /* height: 220px; */
+}
+
+.custom-left {
+  background-color: rgba(254, 161, 3, 0.2) ;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  height: 220px;
+  
+}
+
+.custom-right {
+  background-color: rgba(254, 161, 3, 0.0) ;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  height: 220px;
+  text-align: center;
+}
+
+.custom-3 {
+  background-color: rgba(254, 161, 3, 0.2) ;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  height: 400px;
+  text-align: center;
+
+
+  /* width:150px; */
+}
+
+.custom-7 {
+  background-color: rgba(254, 161, 3, 0.2) ;
+  margin-left: 10px;  
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;   
+  height: 420px;
+  text-align: center;
+
+  
+   /* width: 150px;  */
+  
+  /* padding-left: 10px;
+  padding-right: 10px; */
+  
+}
+
+
+
+
+
+.customform {
+  width: 100px;
+  height: 30px;
+  
+
+}
+
+.custom_serch_div {
+  margin-right: 10px;
+  
+
+}
+
+.custom_toggler{
+  margin-right: 10px;
+
+
+}
+
+.searchicon {
+    
+    width: 30px;
+    height: 30px;
+    background: url("image/search_logo.png") ;
+    display: inline-block;
+    background-size: 30px 30px;
+}
+.searchicon:hover {
+    
+    background: url("image/search_logo2.png") ;
+    background-size: 30px 30px;
+    
+
+}
+
+
+.colombologo {
+    
+  width: 216px;
+  height: 105px;
+  background: url("image/logo.png") ;
+  display: inline-block;
+  background-size: 216px 105px;
+}
+
+.line_in_3 {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 2px;
+}
+
+.name_label {
+float: right;
+width: 5em;
+margin-left: 0em;
+}
+
+.font_custom {
+
+  color:rgb(255, 255, 255);
+}
+
+
+
+
+/* Equal width */
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+/* Add gutters */
+.col {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}

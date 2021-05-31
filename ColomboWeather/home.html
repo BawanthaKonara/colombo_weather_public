@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Colombo Weather/Home</title>
+
+<link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap css link -->
+<link rel="stylesheet" href="style.css"> <!-- custom css link -->
+
+
+</head>
+
+
+<body onload=display_ct();>
+
+<script src="app.js"></script>
+
+<div class="bg"> <!-- BG image -->
+    
+
+        <nav class="navbar navbar-expand-sm navbar-dark navbar-custom"> <!-- nav bar -->
+            <!-- <a href="" class="navbar-brand">Colombo Weather</a> -->
+            <div  class="navbar-brand float-right colombologo" alt="..."> </div>
+
+            <button class="navbar-toggler custom_toggler" data-toggle="collapse" data-target= "#latitude"><span class="navbar-toggler-icon"></span></button>
+            <div class= "collapse navbar-collapse justify-content-end align-items-center" id= "latitude">
+
+                        <form>
+                            <div class="row">
+                                
+                                <div class="col">
+                                    <input type="text" class="form-control customform" placeholder="Latitude">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control customform" placeholder="Longitude">
+                                </div>
+                                <div class="col custom_serch_div ">
+                                    <div  class="rounded float-right searchicon" alt="..."> </div>
+                                </div>
+
+                            </div>
+                        </form>  
+
+            </div>
+        </nav>
+
+        <div class="row  row-1">
+            
+                    <div class="col-sm-6">
+                    <div class="card custom-left ">
+                        <div class="card-body">
+                        <p class="card-title font_custom date">Today</p>
+
+                            
+                                <!-- <label for="sky_statuss" class="h3 font_custom " id="sky_status">******</label> -->
+                                <label for="sky_statuss" class="h3 font_custom " ><img id="sky_status_icon" src=""></label>
+                                <label for="tmp" class="h3 name_label font_custom"> <span id="temp">**</span><sup>o</sup>C</label>
+                                
+                                <hr class="line_in_3">
+    
+                                                <table class="table table-borderless">
+                                                    <thead>
+                                                    <tr>
+                                                        <th scope="col" class="h6 font_custom" >Pressure</th>
+                                                        <th scope="col" class="h6 font_custom" >Wind</th>
+                                                        <th scope="col" class="h6 font_custom" >Humidity</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="h4 font_custom"><span id="pressure">**</span>hPa</td>
+                                                        <td class="h4 font_custom"><span id="wind">**</span>Km/h</td>
+                                                        <td class="h4 font_custom"><span id="humidity">**</span>%</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table> 
+                            
+
+
+                        <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                        
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                    <div class="card custom-right">
+                        <div class="card-body">
+                        <h2 class="card-title h2 font_custom "id="cityname">col</h2>
+                        <p class="card-text h6 font_custom " id="date_c">Mon. May 24</p>
+                        <p class="card-text h6 font_custom" id="time_c">14:16</p>
+                            <br>
+                        <a href="veiw_more.html" class="btn btn-outline-primary">View more</a>
+                        
+                        </div>
+                    </div>
+                    </div>
+            
+
+        </div>
+
+        <div class="row  row-1">
+            
+            <div class="col-sm-4">
+                <div class="card custom-3">
+                    <div class="card-body">
+                        <p class="card-title font_custom" id="date_n1">Tue. May 26</p>
+                        <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                        <form>
+                            <label for="sky_statuss" class="h3 font_custom " ><img id="sky_status_icon1" src=""></label><br>
+                            <label for="temp" class="h3 font_custom" ><span id="temp1">**</span><sup>o</sup>C</label>
+                            <hr class="line_in_3">
+
+                            <label for="rain" class="h6 font_custom">Pressure</label><br>
+                            <label for="rain_value" class="h4 font_custom"><span id="pressure1">**</span>hPa</label>
+                            <hr class="line_in_3">
+
+                            <label for="wind" class="h6 font_custom">Wind</label><br>
+                            <label for="wind_value" class="h4 font_custom"><span id="wind1">**</span>Km/h</label>
+                            <hr class="line_in_3">
+
+                            <label for="humidity" class="h6 font_custom">Humidity</label><br>
+                            <label for="humidity_value" class="h4 font_custom"><span id="humidity1">**</span>%</label>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card custom-3">
+                    <div class="card-body">
+                        <p class="card-title font_custom" id="date_n2">Tue. May 25</p>
+                        <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                        <form>
+                            <label for="sky_statuss" class="h3 font_custom " ><img id="sky_status_icon2" src=""></label><br>
+                            <label for="temp" class="h3 font_custom" ><span id="temp2">**</span><sup>o</sup>C</label>
+                            <hr class="line_in_3">
+
+                            <label for="rain" class="h6 font_custom">Pressure</label><br>
+                            <label for="rain_value" class="h4 font_custom"><span id="pressure2">**</span>hPa</label>
+                            <hr class="line_in_3">
+
+                            <label for="wind" class="h6 font_custom">Wind</label><br>
+                            <label for="wind_value" class="h4 font_custom"><span id="wind2">**</span>Km/h</label>
+                            <hr class="line_in_3">
+
+                            <label for="humidity" class="h6 font_custom">Humidity</label><br>
+                            <label for="humidity_value" class="h4 font_custom"><span id="humidity2">**</span>%</label>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card custom-3">
+                    <div class="card-body">
+                        <p class="card-title font_custom" id="date_n3">Tue. May 25</p>
+                        <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                        <form>
+                            <label for="sky_statuss" class="h3 font_custom " ><img id="sky_status_icon3" src=""></label><br>
+                            <label for="temp" class="h3 font_custom" ><span id="temp3">**</span><sup>o</sup>C</label>
+                            <hr class="line_in_3">
+
+                            <label for="rain" class="h6 font_custom">Pressure</label><br>
+                            <label for="rain_value" class="h4 font_custom"><span id="pressure3">**</span>hPa</label>
+                            <hr class="line_in_3">
+
+                            <label for="wind" class="h6 font_custom">Wind</label><br>
+                            <label for="wind_value" class="h4 font_custom"><span id="wind3">**</span>Km/h</label>
+                            <hr class="line_in_3">
+
+                            <label for="humidity" class="h6 font_custom">Humidity</label><br>
+                            <label for="humidity_value" class="h4 font_custom"><span id="humidity3">**</span>%</label>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    
+
+</div>
+
+</div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+          
+          
+          
+
+
+
+</body>
+</html>
